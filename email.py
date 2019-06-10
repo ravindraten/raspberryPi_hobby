@@ -6,7 +6,7 @@ USERNAME = "username"     # just the part before the @ sign, add yours here
 PASSWORD = "password"     
 
 NEWMAIL_OFFSET = 0       # my unread messages never goes to zero, yours might
-MAIL_CHECK_FREQ = 10      # check mail every 60 seconds
+MAIL_CHECK_FREQ = 10      # check mail every 10 seconds
 
 GPIO.setmode(GPIO.BCM)
 GREEN_LED = 6

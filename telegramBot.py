@@ -16,19 +16,19 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
  
  
-#LED White
+LED White
 GPIO.setup(white, GPIO.OUT)
 GPIO.output(white, 0) #Off initially
-#LED Blue
+LED Blue
 GPIO.setup(blue, GPIO.OUT)
 GPIO.output(blue, 0) #Off initially
-#LED Red
+LED Red
 GPIO.setup(red, GPIO.OUT)
 GPIO.output(red, 0) #Off initially
-#LED green
+LED green
 GPIO.setup(green, GPIO.OUT)
 GPIO.output(green, 0) #Off initially
-#Buzzer
+Buzzer
 GPIO.setup(buzzer, GPIO.OUT)
 
 
@@ -169,7 +169,7 @@ def action(msg):
         #telegram_bot.sendPhoto (chat_id, open('/home/pi/Documents/Telegram/Family.jpeg'))
         
        
-telegram_bot = telepot.Bot('816116314:AAEi_egDV7-0Zelh8Tvl9lHia8M4PT8VCqI')
+telegram_bot = telepot.Bot('') #API key from telegram
 print (telegram_bot.getMe())
 
 MessageLoop(telegram_bot, action).run_as_thread()
