@@ -1,4 +1,4 @@
-#!Vibration sensor to detect vibration and switch on leds depending on the bouncetime.
+#!Vibration sensor to detect vibration and switch on leds depending on the bouncetime. ( SW-420 Vibration sensor)
 import RPi.GPIO as GPIO
 import time
 
